@@ -1,0 +1,469 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+        <title>reveal.js</title>
+
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/black.css">
+
+        <!-- Theme used for syntax highlighting of code -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+
+        <!-- Printing and PDF exports -->
+        <script>
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ## Simple Sociometric Badge.
+                            * Mikael Pratama (S1241079)
+                            * Supervisors.
+                                * Khiet Truong.
+                                * Elze Ufkees.
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ## What is sociometric?
+                            * Sociometric is a quantitative method for measuring social relationships.[3]
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ## What is sociometric badge?
+                            * Sociometric badge is a wearable technology to measure social interactions between its users.[1]
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ![./asset/sociometric-badge.png](./asset/sociometric-badge.png)
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            * Social benchmarking tool.
+                                * "It's like a Fitbit for your career."
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ## Alright, what are the main problems?
+                            * It is not clear how to buy sociometric badge, [http://www.humanyze.com/products.html](http://www.humanyze.com/products.html).
+                                * Price.
+                                * Where to buy.
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            * Lack of alternatives. There are these things, however neither are intended to help sociometric analysis.
+                                * Motorola/Zebra SB1 Smart Badge ~300 Euros.
+                                * Vocera Communication Badge ~400 US Dollars.
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            * Motorola/Zebra SB1 Smart Badge ~300 Euros.
+
+                            ![./asset/motorola-badge.png](./asset/motorola-badge.png)
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            * Vocera Communication Badge ~400 US Dollars.
+
+                            ![./asset/vocera-badge.png](./asset/vocera-badge.png)
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            * People who want to use sociometric badge is usually does not understand electronics and/or networking.
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ## Open source?
+                            * There is a project called Rhythm Open Badge, [https://rhythm.mit.edu/](https://rhythm.mit.edu/).
+                                * Android proof of concept application.
+                                * Django server.
+                                * Version 1 with Arduino kind of board.
+                                * Version 2 with a micro controller that I am not familiar with.
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ![./asset/rhythm-badge.png](./asset/rhythm-badge.png)
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ## What are the problems of Rhythm Open Badge?
+                            * Django server setup is difficult for someone who never touch programming.
+                            * There is no extensive guide for version 1.
+                                * Only small instruction and EagleCAD file.
+                            * There is no extensive guide for version 2.
+                                * Version 2 does not have its micro controller pre - programmed.
+                        </script>
+                    </section>
+                </section>
+                <section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            # State of the art.
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ## Introduction.
+                            ![./asset/venn.png](./asset/venn.png)
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ## History of sociometric badge.
+                            * Active Badge by Olivetti Research in 1990.
+                            * Thinking Tags by MIT Media Lab in 1996.
+                            * MemeTags (later nTag) by MIT Media Lab in 1997.
+                            * SocioMeter by MIT Media Lab in early ~2000.
+                            * UbER - Badge by MIT Media Lab in mid ~2000.
+                            * Sociometric Badge (the first iteration) by MIT Human Dynamics Group in 2010.
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ### Active Badge by Olivetti Research in 1990.
+                            * Track location.
+                            * Indexing multimedia files.
+                            * Stopped used when Internet and cellphone became popular.
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ![./asset/active-badge.png](./asset/active-badge.png)
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ### Thinking Tags by MIT Media Lab in 1996.
+                            * Real - life social networking.
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ![./asset/thinking-tags.png](./asset/thinking-tags.png)
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ### MemeTags (later nTag) by MIT Media Lab in 1998.
+                            * Real - life Twitter.
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ![./asset/meme-tag.png](./asset/meme-tag.png)
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ### SocioMeter by MIT Media Lab in early ~2000.
+                            * It has a lot of sensors.
+                            * People stop using it because it is too big and not seamless enough.
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ![./asset/sociometer.png](./asset/sociometer.png)
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ### UbER - Badge by MIT Media Lab in mid ~2000.
+                            * It uses PIC!
+                            * Iteration from previous badges.
+                            * Flexible to hack.
+                            * Smaller than SocioMeter.
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ![./asset/uber-badge.png](./asset/uber-badge.png)
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ## Recent development in DIY electronics badge.
+                            * "I Can Reflow" Merit Badge.
+                            * 2016 Queercon Badge.
+                            * DEF CON's Unofficial AND!XOR Badge.
+                            * DEF CON's X86 Badge.
+                            * Hackaday Belgrade Badge.
+                            * Hackaday Supercon Badge.
+                            * Every other DEV CON's Badges.
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ### "I Can Reflow" Merit Badge.
+                            * Used to teach people to SMD re flow soldering.
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ![./asset/merit-badge.png](./asset/merit-badge.png)
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ### 2016 Queercon Badge.
+                            * Connected to each other to share colors.
+                            * Hats!!!!
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ![./asset/queer-badge.png](./asset/queer-badge.png)
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ### DEF CON's Unofficial AND!XOR Badge.
+                            * Can be set using other computer via serial communication.
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ![./asset/andxor-badge.png](./asset/andxor-badge.png)
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ### DEF CON's X86 Badge.
+                            * It has puzzle that needs to be solved.
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ![./asset/defcon-badge-1.png](./asset/defcon-badge-1.png)
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ### Hackaday Belgrade Badge and Hackaday Supercon Badge.
+                            * Hackable both firmware and kernel.
+                            * You can play Tetris.
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ![./asset/hackaday-supercon-badge.png](./asset/hackaday-supercon-badge.png)
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ### Every other DEV CON Badges.
+                            ![./asset/defcon-badge-1.png](./asset/defcon-badge-2.png)
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ![./asset/defcon-badge-2.png](./asset/defcon-badge-3.png)
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ![./asset/defcon-badge-3.png](./asset/defcon-badge-4.png)
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ![./asset/defcon-badge-4.png](./asset/defcon-badge-5.png)
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ![./asset/defcon-badge-5.png](./asset/defcon-badge-6.png)
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ![./asset/defcon-badge-6.png](./asset/defcon-badge-7.png)
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ![./asset/defcon-badge-7.png](./asset/defcon-badge-8.png)
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ![./asset/defcon-badge-8.png](./asset/defcon-badge-9.png)
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ![./asset/defcon-badge-9.png](./asset/defcon-badge-10.png)
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ![./asset/defcon-badge-10.png](./asset/defcon-badge-11.png)
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ![./asset/defcon-badge-11.png](./asset/defcon-badge-12.png)
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ![./asset/defcon-badge-12.png](./asset/defcon-badge-13.png)
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ![./asset/defcon-badge-13.png](./asset/defcon-badge-14.png)
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ## So...?
+                            * The most DIY sociometric badge lies between Sociometer and UbER Badge.
+                            * 2016 Queercon Badge can be physically extended.
+                            * DEF CON's Unofficial AND!XOR Badge has unique way to manage its setting.
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ## What is my proposed solution?
+                            * Creating a sociometric badge using Raspberry PI.
+                            * Or using any other SBC.
+                            * Simple server using Flask.
+                            * Database using Py-Mongo (MongoDB).
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ## Raspberry PI and Python.
+                            ![./asset/raspberry-python.png](./asset/raspberry-python.png)
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ## Why?
+                            * Raspberry PI is intended for non electrician and non programmer.
+                            * Even children are capable of using Raspberry PI.
+                        </script>
+                    </section>
+                </section>
+                <section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            # Here are the system requirements.
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ## Minimum.
+                            ![./asset/2.png](./asset/2.png)
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ![./asset/3.png](./asset/3.png)
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ## Realistic.
+                            ![./asset/4.png](./asset/4.png)
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ![./asset/5.png](./asset/5.png)
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ## Ideal.
+                            ![./asset/0.png](./asset/0.png)
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ![./asset/1.png](./asset/1.png)
+                        </script>
+                    </section>
+                </section>
+                <section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            # FAQ.
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ## Implementations?[5]
+                            * Health care.
+                            * Intelligent hospital.
+                            * Knowledge management.
+                            * Personal sales coach.
+                            * Sensible organizations.
+                            * Social networking.
+                            * Video games.
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ## Privacy?
+                            * Professor Alex "Sandy" Pentland "New Deal On Data".
+                            * Common practice (Facebook and Google).
+                                * Clarity of practices.
+                                * Privacy by design (security).
+                                * Simplicity of settings.
+                                * Exchange values.
+                                    * More privacy means less features (vice versa).
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ## What I have done?
+                            * Face detection in Python with OpenCV.
+                            * Pitch and volume processing in Python with Aubio.
+                        </script>
+                    </section>
+                </section>
+            </div>
+        </div>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+
+        <script>
+            // More info https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                history: true,
+
+                // More info https://github.com/hakimel/reveal.js#dependencies
+                dependencies: [
+                    { src: 'plugin/markdown/marked.js' },
+                    { src: 'plugin/markdown/markdown.js' },
+                    { src: 'plugin/notes/notes.js', async: true },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+                ]
+            });
+        </script>
+    </body>
+</html>
